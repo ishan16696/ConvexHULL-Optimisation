@@ -1,5 +1,10 @@
-visualization of test cases is available in graph.ipynb
-code and test cases are available in ishan1 folder
+# Convex hull and various algorithms for obtaining the 2d convex hull .
+--
+ The project aims to explore different convex hull algorithms and the improvement over Standard algorithms. 
+ 
+
+** Visualization ** of test cases is available in graph.ipynb
+code and test cases are available in **ishan1** folder
 inside folder ishan1 
  .all codes and compiled version is available
  .test cases are available in Input folder
