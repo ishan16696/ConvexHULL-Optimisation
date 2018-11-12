@@ -110,9 +110,11 @@ int main(){
     clock_t c1,c2;
 
     ofstream fs;
+    ofstream out;
+    string output="output.csv";
 
     string filename = "TimeImproveMono.csv";
-
+    out.open(output);
     fs.open(filename,std::ios_base::app);
 
  	/* Point input[]={ {0,0}, {1,2} ,{-2,1},{-1,-1}, {3,4} ,{4,3} ,{-5,4} ,{6,5},{7 ,7} ,{7,-7} ,{-7,-7}, {-7,7} ,{9,0} ,{-9, 0}
@@ -162,5 +164,11 @@ int main(){
     printf("Improved Monotone Chain took %f ms to compute Convex HULL \n", time_taken*1000); 
 
      fs << n/1000 <<","<<time_taken*1000<<endl;
+
+     //writing the output into the file
+  for(int i=0;i<x;i++){
+      out  << input2[i].x <<","<<input2[i].y <<endl;
+      
+    }
   return 0;
 }

@@ -195,9 +195,10 @@ int main(){
 
     fs << n/1000 <<","<<time_taken*1000<<endl;
 
+    //writing into the file.
     for(int i=0;i<final.size();i++)
 	{
-		out << final[i].x << " , " <<final[i].y <<endl;
-}
+		out << final[i].x << "," <<final[i].y <<endl;
+	}
 	return 0;
 }

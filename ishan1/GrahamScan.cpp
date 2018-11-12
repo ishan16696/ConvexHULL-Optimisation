@@ -177,9 +177,11 @@ int main(){
 	clock_t c1,c2;
 
 	ofstream fs;
+	ofstream out;
 
     string filename = "TimeGraham.csv";
-
+    string output="output.csv";
+    out.open(output);
     fs.open(filename,std::ios_base::app);
 	//Point input[]= {{0, 3},{1,1} {2, 2},{4,4},{0, 0}};
 	//Point input[]={{0,3},{1,1},{2,2},{2,1},{3,0},{0,0},{3,3}};
